@@ -1,0 +1,98 @@
+body{
+	margin:0px;
+}
+#menu{
+    padding-top: 0cm;
+}
+#menu ul {
+  list-style-type: none;
+  height: 59px;
+  overflow: hidden;
+  background-color: #ACC467;
+
+}
+
+#menu ul li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+
+
+}
+#menu ul li a {
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    width: 400px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 0.2cm;
+
+  
+  }
+#menu ul li a:hover{
+      color:#D8D9B5;
+  }
+
+#top img{
+    height: 1.5cm;
+    width: 6cm;
+}
+#phone{
+    
+}
+.so {
+  font-weight: 600;
+  line-height: 20px;
+  float: none;
+  margin-right: -2px;
+  text-align: center;
+  color: black;
+  
+}
+.page{
+  color: black;
+}
+.next{
+  color: black;
+}
+.enter-email{
+  text-align: center;
+  padding: 30px;
+  color:	#778899;
+  border-bottom: #e4e4e4 thin solid;
+}
+.input{
+  width: 300px;
+  height: 25px;
+}
+.submit{
+  width: 100px;
+  background-color: #D3D3D3;
+  color: white;
+  border: #D3D3D3 thin solid;
+}
+.submit:hover{
+  background-color: black;
+  color: white;
+  border: black thin solid;
+}
+.footer{
+  background: #fafafa;
+    padding: 30px 170px;
+}
+    .ga ul {
+  padding: 0px;
+}
+.ga ul li{
+  list-style: none;
+  padding-top: 13px;
+  margin: 0px;
+}
+
+.ga img{
+  width: 30px;
+  height: 30px;
+}
