@@ -1,25 +1,3 @@
-.login{
-	background-image: url("https://mk0techvisecom0qiete.kinstacdn.com/wp-content/uploads/2020/06/smartphone-accessories.png");
-	background: white;
-    border-radius: 10px;
-    padding: 10px 40px 40px 0px;
-    width: 400px;
-    text-align: center;
-    margin: 40px 493px;
-}
-.login-btn{
-	background: black;
-	color: white;
-	border:none;
-	width: 100%;
-	height: 40px;
-	font-size: 16px;
-}
-.login-btn:hover{
-	background-color: #FFD700;
-	color: black;
-	border:#DCDCDC thin solid;
-}
 body{
 	margin:0px;
 }
@@ -130,4 +108,71 @@ button{
 }
 button a {
   color: #000;
+}
+.enter-email{
+    text-align: center;
+    padding: 30px;
+    color:	#778899;
+    border-bottom: #e4e4e4 thin solid;
+    padding-left: 0px;
+    padding-top: 0;
+}
+.input{
+    width: 300px;
+    height: 25px;
+}
+.submit{
+    width: 100px;
+    background-color: #D3D3D3;
+    color: white;
+    border: #D3D3D3 thin solid;
+}
+.submit:hover{
+    background-color: black;
+    color: white;
+    border: black thin solid;
+}
+.footer{
+    background: #fafafa;
+    padding: 30px 170px;
+}
+.ga ul {
+    padding: 0px;
+}
+.ga ul li{
+    list-style: none;
+    padding-top: 13px;
+    margin: 0px;
+}
+
+.ga img{
+    width: 30px;
+    height: 30px;
+}
+.login{
+background-image: url("https://mk0techvisecom0qiete.kinstacdn.com/wp-content/uploads/2020/06/smartphone-accessories.png");
+background: white;
+border-radius: 10px;
+padding: 10px 40px 40px 40px;
+width: 500px;
+text-align: center;
+margin: 40px 493px;
+}
+.login-btn{
+background: black;
+color: white;
+border:none;
+width: 100%;
+height: 40px;
+font-size: 16px;
+}
+.login-btn:hover{
+background-color: #FFD700;
+color: black;
+border:#DCDCDC thin solid;
+}
+.enter-email p {
+    color: #000;
+    padding-left: 0px;
+    text-align: left;
 }
