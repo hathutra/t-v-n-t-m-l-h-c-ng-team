@@ -1,0 +1,452 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>School Counseling</title>
+
+        <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
+           
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+               
+        <link rel="stylesheet" href="home.css">
+        
+    </head>
+
+    <body>
+        <div class="page-container">
+            <!-- Header -->
+            <header class="header">
+                
+                <div class="top-bar">
+                    <div class="top-bar-container">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <ul class="top-bar-content d-flex flex-row align-items-center">
+                                        <ul class="contact-list">
+                                            <li>
+                                                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                                                <div class="phone-number">0869 672 234</div>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-envelope"></i>
+                                                <div class="mail-address ">datmh2105@gmail.com</div>
+                                            </li>
+                                        </ul>
+                                        <div class="top-bar-login ml-auto">
+                                            <div class="login-button logged-out"><a href="./login.html">Đăng nhập</a></div>
+                                        </div>
+                                        <div class="top-bar-account">
+                                            <div class="account-info logged-in"><a href="#" data-toggle="modal" data-target="#modalaccount">Tài khoản của bạn</a></div>
+                                        </div>
+                                        <div class="top-bar-logout">
+                                            <div class="logout-button logged-in" id="logout"><a>Đăng xuất</a></div>
+                                        </div>
+                                        <div class="top-bar-sign-up">
+                                            <div class="sign-up-button logged-out"><a href="./signup.html">Tạo tài khoản</a></div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+
+                <div class="modal fade" id="modalaccount">
+                    <div class="modal-dialog">
+                        <div class="modal-content align-items-center">
+                            <h1>Thông tin tài khoản</h1><br/>
+                            <div class="account-infos"></div><br/>
+                            <div><input class="btn btn-primary" data-dismiss="modal" value="Đóng"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-container">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="header-content d-flex align-items-center">
+                                    <div class="logo">
+                                        <a class="navbar-brand" href="./index.html"><img src="logo.png" alt="School Counseling" /></a>
+                                    </div>
+                                    <nav class="nav_bar ml-auto">                                      
+                                        <ul class="navbar_nav">
+                                            <li class="nav-item active">
+                                                <a class="nav-link" href="./index.html">Trang chủ</a>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="#" >Blogs</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="#" >Tư vấn trực tuyến</a></li>
+                                            <li class="nav-item logged-in" style="display: none;"><a class="nav-link" href="#" >Tạo Blogs</a></li>
+                                        </ul>
+                                        <div class="facebook"><i class="fab fa-facebook-f"></i></div>
+                                        <div class="twitter"><i class="fab fa-twitter"></i></div>
+                                        <div class="youtube"><i class="fab fa-youtube"></i></div>
+                                        <div class="menu-toggle menu_mn"><i class="fas fa-bars menu_mm" aria-hidden="true"></i></div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="menu d-flex flex-column align-items-end text-right menu_mm">
+                <div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+                <nav class="menu_nav">
+                    <ul class="menu_mm">
+                        <li class="menu_mm"><a href="index.html">Trang chủ</a></li>
+                        <li class="menu_mm"><a href="#">Blogs</a></li>
+                        <li class="menu_mm"><a href="#">Tư vấn trực tuyến</a></li>
+                        <li class="nav-item logged-in" style="display: none;"><a class="nav-link" href="#" >Tạo Blogs</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>School Psychology</h1>
+                            <p>Website tư vấn tâm lý trực tuyến với các chuyên gia hàng đâu</p>
+                            <div class="slider-btn"><a class="btn btn-primary btn-lg" href="#">Tìm hiểu về chúng tôi</a></div>
+                        </div>
+                        <img class="d-block w-100" src="slider_3.jpg" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1>School Psychology</h1>
+                            <p>Website tư vấn tâm lý trực tuyến với các chuyên gia hàng đâu</p>
+                            <div class="slider-btn"><a class="btn btn-primary btn-lg" href="#">Tìm hiểu về chúng tôi</a></div>
+                        </div>
+                        <img class="d-block w-100" src="slider_4.jpg" alt="Forth slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-circle-left"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <i class="fas fa-chevron-circle-right"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="site-section">
+                <div class="container">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-md-8 mb-5 ">
+                            <h2 class="section-heading primary-color-icon text-center">CÁC HÌNH THỨC TƯ VẤN</h2>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                            <div class="feature-1">
+                                <span class="feature-icon"><i class="fas fa-comments"></i></span>                           
+                                <h3>Chat Trực Tuyến 24/7</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                            <div class="feature-1">
+                                <span class="feature-icon"><i class="fas fa-question-circle"></i></span>
+                                <h3>Đặt câu hỏi cho chuyên gia</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                            <div class="feature-1">
+                                <span class="feature-icon"><i class="fab fa-facebook"></i></span>
+                                <h3>Hỏi đáp trên Facebook</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam, cumque a debitis reiciendis dolorum ad minus error.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-12 text-center">
+                            <a href="#" class="btn btn-primary">Dịch vụ khác</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="site-section-1" style="background-image: url('school_background.jpg')">
+                <div class="container">
+                    <div class="row justify-content-center text-center mb-5 section-2-title">
+                        <div class="col-md-6">
+                            <h2 class="expert_title text-center">Chuyên gia hàng đầu</h2>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="testimonial mb-4 text-center">
+                                <div class="expert_image">
+                                    <img src="chuyên_gia_tư_vấn.jpg" alt="Image">
+                                </div>
+                            <div class="expert_body">
+                        <div class="expert_name text-center"><a href="#">Nguyễn Văn A</a></div>
+                        <div class="social_list">
+                          <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                        <blockquote>
+                          <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="testimonial text-center">
+                      <div class="expert_image">
+                        <img src="chuyên_gia_tư_vấn.jpg" alt="Image">
+                      </div>
+                      <div class="expert_body">
+                        <div class="expert_name text-center"><a href="#">Nguyễn Văn A</a></div>
+                        <div class="social_list">
+                          <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>                                
+                        <blockquote>
+                          <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="testimonial text-center">
+                      <div class="expert_image">
+                        <img src="chuyên_gia_tư_vấn.jpg" alt="Image">
+                      </div>
+                      <div class="expert_body">
+                        <div class="expert_name text-center"><a href="#">Nguyễn Văn A</a></div>
+                        <div class="social_list">
+                          <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                          </ul>
+                        </div>
+                        <blockquote>
+                          <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"</p>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlight_blogs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="section_title_container text-center">
+                                <h2 class="section_title">Blogs nổi bật</h2>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row blogs_row">
+                        <div class="col-lg-7 blogs_col">
+                          
+                          <!-- Large Blogs -->
+                            <div class="blogs_large_container">
+                                <div class="blogs_large">
+                                    <div class="blogs_image"><img src="slider_1.jpg" alt=""></div>
+                                    <div class="blogs_large_title"><a href="#">Thử khả năng giải quyết của bạn trong "vấn đề bạn bè"</a></div>
+                                    <div class="blogs_meta">
+                                        <ul>
+                                            <li>03/12/2019</li>
+                                            <li>&nbsp;&nbsp;by&nbsp;&nbsp;</li>
+                                            <li><a href="#">Admin</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="blogs_text">
+                                        <p>Những tình huống dưới đây rất nhiều bạn gặp phải. Bạn đã trải qua bao giờ chưa? Bạn có thể vượt qua những tình huống này không và bằng cách nào?Hãy thử hóa thân vào các nhân vật và đưa ra hướng đi cho nhân vật nhé!</p>
+                                    </div>
+                                    <div class="blogs_link"><a href="#">read more</a></div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col-lg-5 blogs_col">
+                            <div class="blogs_small">
+                                <div class="blogs_small">
+                                    <div class="blogs_small_title"><a href="#">Thử khả năng giải quyết của bạn trong "vấn đề bạn bè"</a></div>
+                                    <div class="blogs_meta">
+                                        <ul>
+                                            <li>03/12/2019</li>
+                                            <li>&nbsp;&nbsp;by&nbsp;&nbsp;</li>
+                                            <li><a href="#">Admin</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="blogs_small">
+                                    <div class="blogs_small_title"><a href="#">Thử khả năng giải quyết của bạn trong "vấn đề bạn bè"</a></div>
+                                    <div class="blogs_meta">
+                                        <ul>
+                                            <li>03/12/2019</li>
+                                            <li>&nbsp;&nbsp;by&nbsp;&nbsp;</li>
+                                            <li><a href="#">Admin</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="blogs_small">
+                                    <div class="blogs_small_title"><a href="#">Thử khả năng giải quyết của bạn trong "vấn đề bạn bè"</a></div>
+                                    <div class="blogs_meta">
+                                        <ul>
+                                            <li>03/12/2019</li>
+                                            <li>&nbsp;&nbsp;by&nbsp;&nbsp;</li>
+                                            <li><a href="#">Admin</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="blogs_small">
+                                    <div class="blogs_small_title"><a href="#">Thử khả năng giải quyết của bạn trong "vấn đề bạn bè"</a></div>
+                                    <div class="blogs_meta">
+                                        <ul>
+                                            <li>03/12/2019</li>
+                                            <li>&nbsp;&nbsp;by&nbsp;&nbsp;</li>
+                                            <li><a href="#">Admin</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                
+                  <!-- Newsletter -->
+                
+            <section class="newsletter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="newsletter_title">
+                                <h2>GET OUR NEW TIPS IN YOUR INBOX DAILY</h2>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" placeholder="Enter your email"/>
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-theme" type="submit">Subscribe</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+              <div class="footer_background">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-lg-4">
+                        <div class="fb-page" data-href="https://www.facebook.com/PVcomBankFanpage/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                          <blockquote cite="https://www.facebook.com/PVcomBankFanpage/" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/PVcomBankFanpage/">PVcomBank</a>
+                          </blockquote>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 ">
+                                <!-- Footer Contact -->
+                        <div class="footer_section footer_contact">
+                          <div class="footer_title">Contact Us</div>
+                          <div class="footer_contact_info">
+                            <ul>
+                              <li>Hotline: 0377522414</li>
+                              <li>Email: hathutra00@gmail.com</li>
+                              <li>Địa chỉ: 40 Baria Sreet 133/2 New York City, United States</li>
+                            </ul>
+                          </div>
+                        </div>
+                                
+                      </div>
+
+                      <div class="col-lg-2 footer_col">
+                                <!-- Footer links -->
+                                <div class="footer_section footer_links">
+                                    <div class="footer_title">About Us</div>
+                                    <div class="footer_links_container">
+                                        <ul>
+                                            <li><a href="index.html">Về chúng tôi</a></li>
+                                            <li><a href="about.html">Câu chuyện</a></li>
+                                            <li><a href="contact.html">Hoạt động</a></li>
+                                            <li><a href="#">Phát triển</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                      </div>
+                      <div class="col-lg-2 footer_col">
+                          <!-- Footer links -->
+                          <div class="footer_section footer_links">
+                              <div class="footer_title">Navigation</div>
+                              <div class="footer_links_container">
+                                  <ul>
+                                      <li><a href="index.html">Home</a></li>
+                                      <li><a href="about.html">Blogs</a></li>
+                                      <li><a href="contact.html">Tư vấn trực tuyến</a></li>
+                                  </ul>
+                              </div>
+                          </div>                         
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </footer>
+
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0&appId=479550959464317&autoLogAppEvents=1"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+         <!-- TODO: Add SDKs for Firebase products that you want to use
+              https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+        <script>
+             // Your web app's Firebase configuration
+             var firebaseConfig = {
+               apiKey: "AIzaSyAm0CwWSOMwA6XOXb-VvUIp1lzOtl3WN38",
+               authDomain: "scproject-e7fc8.firebaseapp.com",
+               databaseURL: "https://scproject-e7fc8.firebaseio.com",
+               projectId: "scproject-e7fc8",
+               storageBucket: "scproject-e7fc8.appspot.com",
+               messagingSenderId: "727294665981",
+               appId: "1:727294665981:web:9929c43336ad8e5fb98a94"
+             };
+             // Initialize Firebase
+             firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <!-- <script type="text/javascript">
+            $(document).ready(function() {
+                $('.menu-toggle').click(function() {
+                    $('.menu-toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script> -->
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/981c3a45da.js" crossorigin="anonymous"></script>
+        <script src="home.js"></script>
+    </body>
+</html>
