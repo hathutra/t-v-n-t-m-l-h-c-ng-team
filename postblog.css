@@ -1,0 +1,51 @@
+body{
+    background-color: yellowgreen;
+}
+input {
+    margin: 0;
+    border-radius: 0;
+    width:70%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    background-color:wheat;
+  }
+  select {
+    margin: 0;
+    border-radius: 0;
+    width:70%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    background-color:wheat;
+  }
+  .addBtn {
+    padding: 10px;
+    width: 5%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+ #submit{
+     background-color:gray;
+     
+     height: 30px;
+     border: honeydew;
+     display: inline-block;
+     width: 30%;
+     
+     
+     
+ }
+ #submit:hover{
+     background-color: honeydew;
+ }

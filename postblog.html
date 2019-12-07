@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="postblog.css">
+</head>
+<body>
+    <form id="nhap" style="color: black;">
+            <input type="text" id="myInput1" placeholder="time..." >
+            <!-- <button onclick="newElement()" class="addBtn" >ADD</button> -->
+           
+            <br>
+            <input type="text" id="myInput2" placeholder="Tiêu đề..." />
+            <!-- <button onclick="newElement()" class="addBtn">ADD</button> -->
+            <br>
+            <input type="text" id="myInput3" placeholder="Nội dung...">
+            <!-- <button onclick="newElement()" class="addBtn">ADD</button> -->
+            <br>
+            <input type="text" id="myInput4" placeholder="ảnh...." >
+            <!-- <button onclick="newElement()" class="addBtn">ADD</button> -->
+            <br>
+            <input type="text" id="myInput5" placeholder="tác giả...">
+            <!-- <button onclick="newElement()" class="addBtn">ADD</button> -->
+            <br>
+            <div>
+            <select id="danhmuc">
+                <option value="" select disable hidden>Danh mục...</option>
+                <option>Học sinh</option>
+                <option>Sinh viên</option>
+                <option>Giáo viên</option>
+                <option>Phụ huynh</option>
+            </select>
+           </div>
+            <!-- <button onclick="newElement()" class="addBtn">ADD</button> -->
+            <br>
+            <button id="submit">SUBMIT</button>
+
+        </form>
+    
+    <div id="hienthi">
+
+    </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAxQOGCAakoNo0Gk7O1PyoswT6W2Huj-ss",
+        authDomain: "project1-htt.firebaseapp.com",
+        databaseURL: "https://project1-htt.firebaseio.com",
+        projectId: "project1-htt",
+        storageBucket: "project1-htt.appspot.com",
+        messagingSenderId: "149978303003",
+        appId: "1:149978303003:web:2ffc6af8c96956c393c6be"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="postblog.js"></script>
+
+</body>
+</html>
